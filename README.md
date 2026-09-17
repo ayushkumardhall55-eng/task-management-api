@@ -32,16 +32,15 @@ It demonstrates the basic structure of a backend application using FastAPI, SQLA
 
 ## Project Structure
 
-FastAPI-CRUD-Todo/
+## Project Structure
+
+task-management-api/
 │
-├── app/
-│   ├── database.py
-│   ├── main.py
-│   ├── models.py
-│   ├── schemas.py
-│   └── routers/
-│       └── todos.py
-│
+├── database/
+├── models/
+├── routers/
+├── schemas/
+├── main.py
 ├── requirements.txt
 ├── README.md
 └── LICENSE
