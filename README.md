@@ -32,8 +32,6 @@ It demonstrates the basic structure of a backend application using FastAPI, SQLA
 
 ## Project Structure
 
-## Project Structure
-
 task-management-api/
 │
 ├── database/
@@ -73,7 +71,7 @@ pip install -r requirements.txt
 
 ### 5. Run the application
 
-uvicorn app.main:app --reload
+uvicorn main:app --reload
 
 The API will be available at:
 
