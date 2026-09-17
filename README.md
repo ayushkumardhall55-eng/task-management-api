@@ -1,144 +1,128 @@
 # FastAPI CRUD Task Management API
 
-A beginner-friendly REST API built with **Python and FastAPI** to demonstrate CRUD operations with a SQLite database. The project follows a modular backend structure and uses SQLAlchemy for database interaction and Pydantic for data validation.
+A beginner-friendly REST API built with Python and FastAPI to demonstrate CRUD operations with SQLite. The project uses SQLAlchemy for database interaction and Pydantic for data validation.
 
 ## Overview
 
-This project demonstrates the fundamentals of building a RESTful API using FastAPI. It provides endpoints to create, retrieve, update, and delete task records stored in a SQLite database.
+This project is a simple Task Management REST API that allows users to create, retrieve, update, and delete task records.
 
-The API can be tested and explored through FastAPI's automatically generated **Swagger UI**.
+It demonstrates the basic structure of a backend application using FastAPI, SQLAlchemy, SQLite, and Pydantic.
 
 ## Features
 
-* Create task records
-* Retrieve task records
-* Update existing task records
-* Delete task records
-* SQLite database integration
-* SQLAlchemy ORM for database operations
-* Pydantic-based data validation
-* Interactive Swagger API documentation
-* Modular application structure
+- Create new tasks
+- Retrieve task records
+- Update existing tasks
+- Delete tasks
+- SQLite database integration
+- SQLAlchemy ORM
+- Pydantic data validation
+- Interactive Swagger API documentation
 
 ## Tech Stack
 
-| Technology | Purpose             |
-| ---------- | ------------------- |
-| Python     | Backend programming |
-| FastAPI    | REST API framework  |
-| SQLAlchemy | Database ORM        |
-| SQLite     | Database            |
-| Pydantic   | Data validation     |
-| Uvicorn    | Application server  |
+| Technology | Purpose |
+|---|---|
+| Python | Backend programming |
+| FastAPI | REST API framework |
+| SQLAlchemy | Database ORM |
+| SQLite | Database |
+| Pydantic | Data validation |
+| Uvicorn | Application server |
 
 ## Project Structure
 
-```text
-task-management-api/
+FastAPI-CRUD-Todo/
 │
-├── database/
-│   └── ...
-├── models/
-│   └── ...
-├── routers/
-│   └── ...
-├── schemas/
-│   └── ...
-├── main.py
+├── app/
+│   ├── database.py
+│   ├── main.py
+│   ├── models.py
+│   ├── schemas.py
+│   └── routers/
+│       └── todos.py
+│
 ├── requirements.txt
-├── LICENSE
-└── README.md
-```
+├── README.md
+└── LICENSE
 
 ## Getting Started
 
 ### 1. Clone the repository
 
-```bash
 git clone https://github.com/ayushkumardhall55-eng/task-management-api.git
+
 cd task-management-api
-```
 
 ### 2. Create a virtual environment
 
-```bash
-python -m venv env
-```
+python -m venv venv
 
-### 3. Activate the environment
+### 3. Activate the virtual environment
 
-**Windows:**
+Windows:
 
-```bash
-.\env\Scripts\activate
-```
+venv\Scripts\activate
 
-**macOS/Linux:**
+macOS/Linux:
 
-```bash
-source env/bin/activate
-```
+source venv/bin/activate
 
 ### 4. Install dependencies
 
-```bash
 pip install -r requirements.txt
-```
 
 ### 5. Run the application
 
-```bash
-uvicorn main:app --reload
-```
+uvicorn app.main:app --reload
 
 The API will be available at:
 
-```text
 http://127.0.0.1:8000
-```
 
 ## API Documentation
 
-FastAPI automatically provides interactive API documentation.
+FastAPI provides interactive API documentation through Swagger UI.
 
 Open:
 
-```text
 http://127.0.0.1:8000/docs
-```
 
-From Swagger UI, you can view the available endpoints and send requests directly to the API.
+You can use Swagger UI to test the available API endpoints directly from your browser.
 
 ## CRUD Operations
 
-The application demonstrates the following REST operations:
-
-| HTTP Method | Operation | Purpose                 |
-| ----------- | --------- | ----------------------- |
-| POST        | Create    | Add a new task          |
-| GET         | Read      | Retrieve task records   |
-| PUT         | Update    | Modify an existing task |
-| DELETE      | Delete    | Remove a task           |
+| HTTP Method | Operation | Purpose |
+|---|---|---|
+| POST | Create | Add a new task |
+| GET | Read | Retrieve task records |
+| PUT | Update | Modify an existing task |
+| DELETE | Delete | Remove a task |
 
 ## Learning Objectives
 
 This project was used to practice:
 
-* Designing REST API endpoints
-* Working with FastAPI routes
-* Connecting an API to a relational database
-* Performing CRUD operations
-* Using SQLAlchemy for database interaction
-* Validating API request data with Pydantic
-* Testing endpoints using Swagger UI
-* Organizing a Python backend application into separate modules
+- REST API development
+- FastAPI application structure
+- CRUD operations
+- Database integration
+- SQLAlchemy ORM
+- Pydantic validation
+- API testing using Swagger UI
 
 ## Attribution
 
-This repository is a fork and learning adaptation of an open-source FastAPI CRUD project.
+This project is adapted from an open-source FastAPI CRUD Todo project by lymanny.
 
-The original project was created by **lymanny** and is licensed under the **MIT License**. The original license and attribution have been retained in this repository.
+Original project:
+
+https://github.com/lymanny/FastAPI-CRUD-Todo
+
+The original MIT License and copyright notice are retained in this repository.
 
 ## License
 
-This project is distributed under the **MIT License**. See the `LICENSE` file for details.
+This project is licensed under the MIT License.
+
+See the LICENSE file for details.
